@@ -1,4 +1,4 @@
-# RspecMatchersCombinators
+# SpecCombos
 
 Rspec matchers that can combine other matchers together, to allow precise testing elements of a sequence for example. The goal is to get :
 
@@ -10,7 +10,7 @@ Rspec matchers that can combine other matchers together, to allow precise testin
 
 Add this line to your application's Gemfile:
 
-    gem 'rspec_matchers_combinators'
+    gem 'spec_combos'
 
 And then execute:
 
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rspec_matchers_combinators
+    $ gem install spec_combos
 
 ## Usage
 

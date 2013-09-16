@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rspec_matchers_combinators/version'
+require 'spec_combos/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rspec_matchers_combinators"
-  spec.version       = RspecMatchersCombinators::VERSION
+  spec.name          = "spec_combos"
+  spec.version       = SpecCombos::VERSION
   spec.authors       = ["Philou"]
   spec.email         = ["philippe.bourgau@gmail.com"]
   spec.description   = %q{Rspec matchers to combine matchers together}
   spec.summary       = %q{Allows to build up matchers able to precisely match item from a collection for example}
-  spec.homepage      = "http://github.com/philou/rspec_matchers_combinators"
+  spec.homepage      = "http://github.com/philou/spec_combos"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

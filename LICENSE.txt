@@ -1,4 +1,4 @@
-Copyright (c) 2013 Philou
+Copyright (c) 2013 Philippe Bourgau
 
 MIT License
 
