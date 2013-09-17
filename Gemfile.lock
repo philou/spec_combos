@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    spec_combos (0.0.1)
+    spec_combos (0.1.0)
       rspec
 
 GEM
