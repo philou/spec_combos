@@ -2,10 +2,6 @@
 RSpec::Matchers.define :all_ do |item_matcher|
 
   match do |actual_items|
-    if item_matcher.respond_to?(:in)
-      item_matcher.in(actual_items)
-    end
-
     actual_items.all? { |item| item_matcher.matches?(item)}
   end
 
