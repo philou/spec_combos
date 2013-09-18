@@ -32,10 +32,10 @@ module SpecCombos
     def perform_matches(actual_items)
       @match_details = actual_items.each_with_index.map do |item, index|
         matcher = @item_matcher_proc.call
-        { :index => index,
-          :item => item,
-          :matcher => matcher,
-          :match => matcher.matches?(item)}
+        { index: index,
+          item: item,
+          matcher: matcher,
+          match: matcher.matches?(item)}
       end
     end
     def failure_message(expected_match, summary)
