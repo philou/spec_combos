@@ -1,6 +1,6 @@
-# Matcher to verify that all items match something else
-
 module SpecCombos
+
+  # Matcher to verify that all items match something else
   class AllMatcher
 
     def initialize(&item_matcher_proc)
@@ -21,7 +21,7 @@ module SpecCombos
     end
 
     def failure_message_for_should_not
-      failure_message(SHOULD_NOT, "expected #{actual_items} not to #{description}, but the following items were:")
+      failure_message(SHOULD_NOT, "expected #{actual_items} not to #{description}, but all items were:")
     end
 
     private
