@@ -1,4 +1,4 @@
-require 'spec_combos/have_any_that_matcher'
+require 'spec_combos/any_matcher'
 
 describe 'have_any_that matcher' do
   it 'matches collections with at least one matching element' do

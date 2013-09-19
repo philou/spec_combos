@@ -1,4 +1,6 @@
 module SpecCombos
+
+  # Mixin for the :and, :any and other collection matchers
   module CollectionMatcher
 
     def initialize(&item_matcher_proc)

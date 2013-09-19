@@ -26,6 +26,7 @@ module SpecCombos
   end
 end
 
-def have_any_that(&item_matcher_proc)
+def any_(&item_matcher_proc)
   SpecCombos::AnyMatcher.new(&item_matcher_proc)
 end
+alias :have_any_that :any_
