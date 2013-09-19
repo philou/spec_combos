@@ -6,25 +6,22 @@ module SpecCombos
   class AllMatcher
     include CollectionMatcher
 
-    def initialize(&item_matcher_proc)
-      @item_matcher_proc = item_matcher_proc
-    end
+    protected
 
-    def matches?(actual_items)
-      perform_matches(actual_items)
+    def match_result
       matches(NOT_MATCHING).empty?
     end
 
-    def description
-      "all #{@item_matcher_proc.call.description}"
+    def short_description
+      "all"
     end
 
-    def failure_message_for_should
-      failure_message(MATCHING, "expected #{actual_items} to #{description}, but the following were not:")
+    def failure_summary_for_should
+      "expected #{actual_items} to #{description}, but the following were not:"
     end
 
-    def failure_message_for_should_not
-      failure_message(NOT_MATCHING, "expected #{actual_items} not to #{description}, but all were:")
+    def failure_summary_for_should_not
+      "expected #{actual_items} not to #{description}, but all were:"
     end
   end
 end
