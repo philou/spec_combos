@@ -1,4 +1,4 @@
-require 'spec_combos/all_matcher'
+require 'spec_helper'
 
 describe 'all matcher' do
   it 'matches collections with all matching elements' do
@@ -21,7 +21,7 @@ describe 'all matcher' do
 
     end.to raise_error(RSpec::Expectations::ExpectationNotMetError,
                        "expected [1, 2, 3] to all be odd, but the following were not:\n" +
-                       "  #1, 2 : expected odd? to return true, got false")
+                       "  [1] (2): expected odd? to return true, got false")
   end
 
   it 'has an explicit should not message' do
@@ -30,7 +30,7 @@ describe 'all matcher' do
 
     end.to raise_error(RSpec::Expectations::ExpectationNotMetError,
                        "expected [1, 3] not to all be odd, but all were:\n" +
-                       "  #0, 1 : expected odd? to return false, got true\n" +
-                       "  #1, 3 : expected odd? to return false, got true")
+                       "  [0] (1): expected odd? to return false, got true\n" +
+                       "  [1] (3): expected odd? to return false, got true")
   end
 end

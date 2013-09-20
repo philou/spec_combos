@@ -1,4 +1,4 @@
-require 'spec_combos/any_matcher'
+require 'spec_helper'
 
 describe 'have_any_that matcher' do
   it 'matches collections with at least one matching element' do
@@ -21,8 +21,8 @@ describe 'have_any_that matcher' do
 
     end.to raise_error(RSpec::Expectations::ExpectationNotMetError,
                        "expected [0, 2] to have any that be odd, but none were:\n" +
-                       "  #0, 0 : expected odd? to return true, got false\n" +
-                       "  #1, 2 : expected odd? to return true, got false")
+                       "  [0] (0): expected odd? to return true, got false\n" +
+                       "  [1] (2): expected odd? to return true, got false")
   end
 
   it 'has an explicit should not message' do
@@ -31,7 +31,7 @@ describe 'have_any_that matcher' do
 
     end.to raise_error(RSpec::Expectations::ExpectationNotMetError,
                        "expected [1, 4, 6] not to have any that be odd, but the following were:\n" +
-                       "  #0, 1 : expected odd? to return false, got true")
+                       "  [0] (1): expected odd? to return false, got true")
   end
 
 end

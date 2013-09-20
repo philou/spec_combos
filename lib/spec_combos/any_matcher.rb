@@ -1,16 +1,12 @@
-require_relative "collection_matcher"
-
 module SpecCombos
 
   # Matcher to verify that all items match something else
   class AnyMatcher
+    include MatcherCombiner
+    include MatcherCombiner::Or
     include CollectionMatcher
 
-    protected
-
-    def match_result
-      !matches(MATCHING).empty?
-    end
+    private
 
     def short_description
       "have any that"
