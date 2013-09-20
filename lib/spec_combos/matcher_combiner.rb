@@ -34,9 +34,13 @@ module SpecCombos
 
     MATCHING = true
     NOT_MATCHING = false
+    INDENT_WIDTH = 2
 
     def failure_message(expected_match, summary)
-      ([summary] + explanations(!expected_match)).join("\n").gsub("\n", "\n  ")
+      summary + "\n" + indent(full_explanation(expected_match), INDENT_WIDTH)
+    end
+    def full_explanation(expected_match)
+      explanations(!expected_match).join("\n")
     end
     def explanations(expected_match)
       matches(expected_match).map {|failure| explain(failure)}
@@ -60,6 +64,10 @@ module SpecCombos
 
     def matches(expected_match)
       @match_details.find_all {|detail| detail[:match] == expected_match}
+    end
+
+    def indent(text, tabs)
+      text.gsub(/^/, ' ' * tabs)
     end
   end
 
