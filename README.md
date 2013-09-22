@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The matchers can be used like any matcher, just taking other matchers as arguments.
+
+### All matcher
+
+    expect([1,3,5]).to all_ { be_odd }
+
+### Any matcher
+
+    expect([2,1,4]).to have_any_that { be_odd }
+
+### And matcher
+
+    expect(2).to and_(be_even, be_instance_of(Fixnum))
+
+It can be composed with 'any' or 'all' matchers :
+
+    expect([1,3,5]).to all_ { and_(be_odd, be_instance_of(Fixnum)) }
 
 ## Contributing
 
