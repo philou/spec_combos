@@ -8,5 +8,4 @@ rvm:
   - jruby-21mode
   - jruby-20mode
   - jruby-19mode
-  - rbx
 script: bundle exec rake
