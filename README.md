@@ -2,11 +2,13 @@
 
 # SpecCombos
 
-Rspec matchers that can combine other matchers together, to allow precise testing elements of a sequence for example. The goal is to get :
+Rspec 2.0 matchers that can combine other matchers together, to allow precise testing elements of a sequence for example. The goal is to get :
 
 * concise and readable specs
 * factorized code
 * explicit assertion failure messages
+
+Similar matchers are built-in Rspec 3.0.
 
 ## Installation
 
