@@ -7,3 +7,6 @@ rvm:
   - jruby-20mode
   - jruby-19mode
 script: bundle exec rake
+addons:
+  code_climate:
+    repo_token: fb989d7074228d42d517d6eaae724e7d4ce1a0c5e7cd3ba38e7433fa63c646eb
