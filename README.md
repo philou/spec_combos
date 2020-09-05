@@ -1,5 +1,10 @@
 [![Build Status](https://travis-ci.org/philou/spec_combos.svg?branch=master)](https://travis-ci.org/philou/spec_combos) [![Test Coverage](https://codeclimate.com/github/philou/spec_combos/badges/coverage.svg)](https://codeclimate.com/github/philou/spec_combos) [![Code Climate](https://codeclimate.com/github/philou/spec_combos/badges/gpa.svg)](https://codeclimate.com/github/philou/spec_combos)
 
+# Maintainers Wanted
+
+[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
+
+
 # SpecCombos
 
 Rspec 2.0 matchers that can combine other matchers together, to allow precise testing elements of a sequence for example. The goal is to get :
