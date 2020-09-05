@@ -2,8 +2,9 @@
 
 # Maintainers Wanted
 
-[![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
+[!Repo Status Unsupported](https://www.repostatus.org/badges/latest/unsupported.svg) [![Maintainers Wanted](https://img.shields.io/badge/maintainers-wanted-red.svg)](https://github.com/pickhardt/maintainers-wanted)
 
+This lib used to work with previous versions of RSpec, unfortunately, I don't have the time to  maintain it anymore. I'm not even sure it would be useful with newer versions of RSpec.
 
 # SpecCombos
 
